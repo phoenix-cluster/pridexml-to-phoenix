@@ -1,4 +1,4 @@
-package ncpsb.phoenixcluster.pridexmltophoenix.model;
+package org.ncpsb.phoenixcluster.pridexmltophoenix.model;
 
 /**
  * Created by baimi on 2017/11/10.

@@ -18,10 +18,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 09:45:37,414 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 09:45:37,987 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 09:45:38,541 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x518caac3 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -57,10 +57,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 09:45:40,392 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0074
 2017-11-20 09:45:40,429 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0074 closed
@@ -85,10 +85,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:32:10,404 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:32:10,781 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:32:11,222 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x3fc79729 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -124,10 +124,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:32:12,047 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0075
 2017-11-20 10:32:12,095 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0075 closed
@@ -152,10 +152,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:34:04,492 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:34:04,867 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:34:05,258 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x588ab592 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -191,10 +191,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:34:06,132 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0076
 2017-11-20 10:34:06,147 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0076 closed
@@ -219,10 +219,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:34:44,787 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:34:45,178 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:34:45,568 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x238b521e connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -258,10 +258,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:34:46,477 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0077
 2017-11-20 10:34:46,508 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0077 closed
@@ -286,10 +286,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:36:11,549 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:36:15,049 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:36:16,112 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x21680803 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -325,10 +325,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:36:19,909 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0078
 2017-11-20 10:36:19,926 INFO [main-EventThread] o.a.z.ClientCnxn [ClientCnxn.java:512] EventThread shut down
@@ -353,10 +353,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:40:30,182 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:40:30,697 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:40:31,082 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x588ab592 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -392,10 +392,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:40:32,050 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0079
 2017-11-20 10:40:32,074 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0079 closed
@@ -420,10 +420,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:46:03,541 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:46:03,991 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:46:04,365 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x5e21e98f connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -459,10 +459,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:46:05,328 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007a
 2017-11-20 10:46:05,355 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007a closed
@@ -487,10 +487,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 10:48:28,472 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 10:48:28,847 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 10:48:29,206 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x5e21e98f connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -526,10 +526,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 10:48:30,185 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007b
 2017-11-20 10:48:30,216 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007b closed
@@ -554,10 +554,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 11:00:19,261 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 11:00:19,747 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 11:00:20,117 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x5e21e98f connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -593,10 +593,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 11:00:21,026 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007c
 2017-11-20 11:00:21,054 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007c closed
@@ -621,10 +621,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 11:13:16,247 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 11:13:16,694 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 11:13:17,067 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x72ef8d15 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -660,10 +660,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 11:13:18,026 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007d
 2017-11-20 11:13:18,057 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007d closed
@@ -688,10 +688,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 11:14:37,045 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 11:14:37,473 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 11:14:37,860 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x72ef8d15 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -727,10 +727,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 11:14:38,832 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007e
 2017-11-20 11:14:38,864 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007e closed
@@ -755,10 +755,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 11:18:01,070 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 11:18:01,430 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 11:18:01,744 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x72ef8d15 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -794,10 +794,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:122)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 11:18:02,603 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead007f
 2017-11-20 11:18:02,635 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead007f closed
@@ -822,10 +822,10 @@ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Ha
 	at org.apache.phoenix.jdbc.PhoenixDriver.<clinit>(PhoenixDriver.java:69)
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:264)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:120)
-	at ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-	at ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+	at PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:120)
+	at PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+	at Cli.parse(Cli.java:62)
+	at Main.main(Main.java:8)
 2017-11-20 11:22:14,373 WARN [main] o.a.h.u.NativeCodeLoader [NativeCodeLoader.java:62] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2017-11-20 11:22:14,795 INFO [main] o.a.p.q.ConnectionQueryServicesImpl [ConnectionQueryServicesImpl.java:2412] An instance of ConnectionQueryServices was created.
 2017-11-20 11:22:15,260 INFO [main] o.a.h.h.z.RecoverableZooKeeper [RecoverableZooKeeper.java:120] Process identifier=hconnection-0x44be0077 connecting to ZooKeeper ensemble=192.168.6.20:2181
@@ -861,10 +861,10 @@ org.apache.phoenix.jdbc.PhoenixEmbeddedDriver.createConnection(PhoenixEmbeddedDr
 org.apache.phoenix.jdbc.PhoenixDriver.connect(PhoenixDriver.java:221)
 java.sql.DriverManager.getConnection(DriverManager.java:664)
 java.sql.DriverManager.getConnection(DriverManager.java:270)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
-ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
-ncpsb.phoenixcluster.pridexmltophoenix.Cli.parse(Cli.java:62)
-ncpsb.phoenixcluster.pridexmltophoenix.Main.main(Main.java:8)
+PrideXmlImporter.persisToPhoenix(PrideXmlImporter.java:121)
+PrideXmlImporter.importToPhoenix(PrideXmlImporter.java:54)
+Cli.parse(Cli.java:62)
+Main.main(Main.java:8)
 
 2017-11-20 11:22:16,247 INFO [main] o.a.h.h.c.ConnectionManager$HConnectionImplementation [ConnectionManager.java:1678] Closing zookeeper sessionid=0x15f6bbb2ead0080
 2017-11-20 11:22:16,283 INFO [main] o.a.z.ZooKeeper [ZooKeeper.java:684] Session: 0x15f6bbb2ead0080 closed

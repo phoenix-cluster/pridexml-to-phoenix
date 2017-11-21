@@ -1,7 +1,7 @@
-package ncpsb.phoenixcluster.pridexmltophoenix;
+package org.ncpsb.phoenixcluster.pridexmltophoenix;
 
-import ncpsb.phoenixcluster.pridexmltophoenix.model.PSMRow;
-import ncpsb.phoenixcluster.pridexmltophoenix.model.SpectrumRow;
+import org.ncpsb.phoenixcluster.pridexmltophoenix.model.PSMRow;
+import org.ncpsb.phoenixcluster.pridexmltophoenix.model.SpectrumRow;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.ac.ebi.pride.utilities.data.controller.DataAccessController;

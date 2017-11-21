@@ -1,4 +1,4 @@
-package ncpsb.phoenixcluster.pridexmltophoenix;
+package org.ncpsb.phoenixcluster.pridexmltophoenix;
 
 /**
  * Created by baimi on 2017/11/7.
@@ -8,7 +8,6 @@ import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javafx.scene.chart.PieChart;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -17,8 +16,6 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import uk.ac.ebi.pride.utilities.data.controller.DataAccessController;
 import uk.ac.ebi.pride.utilities.data.controller.impl.ControllerImpl.PrideXmlControllerImpl;
-
-import static ncpsb.phoenixcluster.pridexmltophoenix.PrideXmlImporter.*;
 
 public class Cli {
     private static final Logger log = Logger.getLogger(Cli.class.getName());
