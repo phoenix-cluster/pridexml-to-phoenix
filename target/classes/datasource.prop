@@ -1,3 +1,0 @@
-driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
-url: jdbc:phoenix:192.168.6.20:2181:/hbase
-type: com.alibaba.druid.pool.DruidDataSource
