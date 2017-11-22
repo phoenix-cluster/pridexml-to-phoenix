@@ -30,6 +30,7 @@ public class Cli {
         options.addOption("v", "var", true, "Here you can set parameter .");
         options.addOption("i", "input", true, "The path of the input PRIDE XML file");
         options.addOption("p", "projectId", true, "The project id");
+        options.addOption("om", "outputMgf", false, "If want to output the mgf file");
     }
 
     public void parse() {
