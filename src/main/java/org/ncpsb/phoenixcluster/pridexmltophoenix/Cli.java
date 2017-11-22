@@ -59,8 +59,21 @@ public class Cli {
                 importer.importToPhoenix(inputFile);
 //                log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));
                 // Whatever you want to do with the setting goes here
+
+                if (cmd.hasOption("om")) {
+                    File outputFile = new File(inputFileName.substring(0,inputFileName.length()-4) + ".mgf");
+                    if (outputFile.exists() && outputFile.length()>0) {
+                        System.out.println(outputFile.length());
+                        System.out.println(outputFile.getAbsolutePath() + "is already there, abort converting");
+                    }
+                    else{
+                        MGFConverterWrapper converter = new MGFConverterWrapper(controller, outputFile.getAbsolutePath());
+                        converter.convert();
+                    }
+                }
+
             } else {
-                log.log(Level.SEVERE, "MIssing i or p option");
+                log.log(Level.SEVERE, "Missing i or p option");
                 help();
             }
 
@@ -68,6 +81,8 @@ public class Cli {
         } catch (ParseException e) {
             log.log(Level.SEVERE, "Failed to parse comand line properties", e);
             help();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -79,4 +94,3 @@ public class Cli {
         System.exit(0);
     }
 }
-
