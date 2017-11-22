@@ -68,7 +68,7 @@ public class Cli {
                         System.out.println(outputFile.getAbsolutePath() + "is already there, abort converting");
                     }
                     else{
-                        MGFConverterWrapper converter = new MGFConverterWrapper(controller, outputFile.getAbsolutePath());
+                        MGFConverterOverride converter = new MGFConverterOverride(controller, outputFile.getAbsolutePath(), projectId);
                         converter.convert();
                     }
                 }
