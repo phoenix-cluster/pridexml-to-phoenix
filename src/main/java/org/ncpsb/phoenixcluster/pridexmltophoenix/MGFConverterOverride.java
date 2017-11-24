@@ -82,7 +82,7 @@ public class MGFConverterOverride{
                     writer.println("BEGIN IONS");
                     String spectrumTitle = this.projectId + ";" +
                                            ((File)this.controller.getSource()).getName() + ";" +
-                                           spectrumId;
+                                           "spectrum=" + spectrumId;
                     writer.println("TITLE=" + spectrumTitle);
                     writer.println("PEPMASS=" + this.controller.getSpectrumPrecursorMz(spectrumId));
                     Integer charge = this.controller.getSpectrumPrecursorCharge(spectrumId);

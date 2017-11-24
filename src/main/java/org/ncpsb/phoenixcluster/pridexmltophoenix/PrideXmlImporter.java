@@ -73,7 +73,7 @@ public class PrideXmlImporter {
                 double[] intensityArray = spectrum.getIntensityBinaryDataArray().getDoubleArray();
 
                 SpectrumRow spectrumRow = new SpectrumRow();
-                spectrumRow.setSpectrumTitle(this.projectId + ";" + this.relativeFileName + ";" + spectrumId);
+                spectrumRow.setSpectrumTitle(this.projectId + ";" + this.relativeFileName + ";" + "spectrum=" + spectrumId);
                 spectrumRow.setCharge(charge);
                 spectrumRow.setPrecursorMz(precursorMz);
                 spectrumRow.setPrecursorIntens(precursorIntens);
