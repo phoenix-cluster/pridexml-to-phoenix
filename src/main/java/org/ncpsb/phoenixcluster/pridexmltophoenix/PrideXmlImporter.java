@@ -96,13 +96,39 @@ public class PrideXmlImporter {
             for (Peptide peptideItem : identification.getPeptides()) {
                 Comparable spectrumId = peptideItem.getSpectrumIdentification().getSpectrum().getId();
                 PSMRow psmRow = new PSMRow();
+                psmRow.setSpectrumTitle(this.projectId + ";" + this.relativeFileName + ";" + "spectrum=" + spectrumId);
                 psmRow.setPeptideSequence(peptideItem.getSequence());
-                psmRow.setSpectrumTitle(this.projectId + ";" + this.relativeFileName + ";" + spectrumId);
+                List<Modification> mods = peptideItem.getModifications();
+                String modsString = getStringFromModList(mods);
+                psmRow.setModifications(modsString);
                 this.psmRows.add(psmRow);
             }
         }
 
 //        int n = controller.getNumberOfPeptides();
+    }
+
+    //todo: consider multiple modifications in one location
+    private String getStringFromModList(List<Modification> mods) {
+        StringBuffer modsStringB = new StringBuffer();
+        for (Modification mod : mods){
+            int loc = mod.getLocation();
+            List<String> residues = mod.getResidues();
+            List<Double> massDeltaList = mod.getAvgMassDelta();
+            modsStringB.append(loc);
+            modsStringB.append(",");
+            modsStringB.append(residues.get(0));
+            modsStringB.append(",");
+            modsStringB.append(massDeltaList.get(0));
+            modsStringB.append(";");
+//            StringBuffer massDeltaStringB = new StringBuffer();
+//            for (Double massDelta : massDeltaList) {
+//                massDeltaStringB.append(massDelta);
+//                massDeltaStringB.append("|");
+//            }
+//            massDeltaStringB.deleteCharAt(massDeltaStringB.length() - 1);
+        }
+        return modsStringB.toString();
     }
 
     private void persisToPhoenix() throws ClassNotFoundException, SQLException {

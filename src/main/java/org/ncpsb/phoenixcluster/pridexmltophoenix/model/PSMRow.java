@@ -7,6 +7,15 @@ package org.ncpsb.phoenixcluster.pridexmltophoenix.model;
 public class PSMRow {
     String spectrumTitle;
     String peptideSequence;
+    String modifications;
+
+    public String getModifications() {
+        return modifications;
+    }
+
+    public void setModifications(String modifications) {
+        this.modifications = modifications;
+    }
 
     public String getSpectrumTitle() {
         return spectrumTitle;
