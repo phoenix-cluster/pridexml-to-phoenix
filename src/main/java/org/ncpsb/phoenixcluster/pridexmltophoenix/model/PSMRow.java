@@ -32,4 +32,13 @@ public class PSMRow {
     public void setPeptideSequence(String peptideSequence) {
         this.peptideSequence = peptideSequence;
     }
+
+    @Override
+    public String toString() {
+        return "PSMRow{" +
+                "spectrumTitle='" + spectrumTitle + '\'' +
+                ", peptideSequence='" + peptideSequence + '\'' +
+                ", modifications='" + modifications + '\'' +
+                '}';
+    }
 }

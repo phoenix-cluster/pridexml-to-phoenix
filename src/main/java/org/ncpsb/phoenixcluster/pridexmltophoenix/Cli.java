@@ -30,7 +30,9 @@ public class Cli {
         options.addOption("v", "var", true, "Here you can set parameter .");
         options.addOption("i", "input", true, "The path of the input PRIDE XML file");
         options.addOption("p", "projectId", true, "The project id");
-        options.addOption("om", "outputMgf", false, "If want to output the mgf file");
+        options.addOption("m", "output2Mgf", false, "If want to output the mgf file");
+        options.addOption("ph", "output2Phoenix", false, "If want to output the mgf file");
+        options.addOption("csv", "output2csv", false, "If want to output the mgf file");
     }
 
     public void parse() {
@@ -57,11 +59,25 @@ public class Cli {
 
                 DataAccessController controller = new PrideXmlControllerImpl(inputFile);
                 PrideXmlImporter importer = new PrideXmlImporter(controller, inputFile, projectId);
-                importer.importToPhoenix(inputFile);
+
+                if (cmd.hasOption("ph")) {
+                    importer.importToPhoenix();
+                }
+                if(cmd.hasOption("csv")){
+//                    File outputFile = new File(projectId + "_psm.csv");
+                    //we need to append, so no file exists check now
+//                    if (outputFile.exists() && outputFile.length()>0) {
+//                        System.out.println(outputFile.length());
+//                        System.out.println(outputFile.getAbsolutePath() + "is already there, abort converting");
+//                    }
+//                    else{
+                        importer.persistToCsv(projectId);
+//                    }
+                }
 //                log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));
                 // Whatever you want to do with the setting goes here
 
-                if (cmd.hasOption("om")) {
+                if (cmd.hasOption("m")) {
                     File outputFile = new File(inputFileName.substring(0,inputFileName.length()-4) + ".mgf");
                     if (outputFile.exists() && outputFile.length()>0) {
                         System.out.println(outputFile.length());
