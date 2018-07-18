@@ -1,5 +1,6 @@
 package org.ncpsb.phoenixcluster.pridexmltophoenix;
 
+import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -226,15 +227,30 @@ public class PrideXmlImporter {
 //                "peptide_sequence VARCHAR," +
 //                "modifications VARCHAR" +
 //                ")";
+        final String[] SPEC_CSV_HEADER = {"spectrumTitle", "precursorMz", "precursorIntens", "charge", "peaklistMz", "peaklistIntens"};
+        final String[] PSM_CSV_HEADER = { "spectrumTitle", "peptideSequence", "modifications"};
+
+        ColumnPositionMappingStrategy<PSMRow> psmMappingStrategy = new ColumnPositionMappingStrategy<PSMRow>();
+        ColumnPositionMappingStrategy<SpectrumRow> specMappingStrategy = new ColumnPositionMappingStrategy<SpectrumRow>();
+
+        psmMappingStrategy.setType(PSMRow.class);
+        psmMappingStrategy.setColumnMapping(PSM_CSV_HEADER);
+
+        specMappingStrategy.setType(SpectrumRow.class);
+        specMappingStrategy.setColumnMapping(SPEC_CSV_HEADER);
 
         Writer psmWriter = new FileWriter(psmFile, true);// true for append mode
-        StatefulBeanToCsv psmBeanToCsv = new StatefulBeanToCsvBuilder(psmWriter).build();
+        StatefulBeanToCsv psmBeanToCsv = new StatefulBeanToCsvBuilder(psmWriter)
+                .withMappingStrategy(psmMappingStrategy)
+                .build();
         psmBeanToCsv.write(this.psmRows);
         System.out.println(this.psmRows.size() + " psm rows have been imported");
         psmWriter.close();
 
         Writer specWriter = new FileWriter(specFile, true);// true for append mode
-        StatefulBeanToCsv specBeanToCsv = new StatefulBeanToCsvBuilder(specWriter).build();
+        StatefulBeanToCsv specBeanToCsv = new StatefulBeanToCsvBuilder(specWriter)
+                .withMappingStrategy(specMappingStrategy)
+                .build();
         specBeanToCsv.write(this.spectrumRows);
         System.out.println(this.spectrumRows.size() + " spec rows have been imported");
         specWriter.close();
