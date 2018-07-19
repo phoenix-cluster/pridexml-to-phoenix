@@ -71,7 +71,7 @@ public class Cli {
 //                        System.out.println(outputFile.getAbsolutePath() + "is already there, abort converting");
 //                    }
 //                    else{
-                        importer.persistToCsv(projectId);
+                        importer.persistToCsv(projectId, suffix);
 //                    }
                 }
 //                log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));

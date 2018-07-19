@@ -205,10 +205,10 @@ public class PrideXmlImporter {
     }
 
 
-    public void persistToCsv(String projectId) throws ClassNotFoundException, IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public void persistToCsv(String projectId, String suffix_file_name) throws ClassNotFoundException, IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
 
-        File psmFile = new File(projectId + "_psm.csv");
-        File specFile = new File(projectId + "_spec.csv");
+        File psmFile = new File( suffix_file_name + "_psm.csv");
+        File specFile = new File(suffix_file_name + "_spec.csv");
 //        String spectrumTableName = "t_spectrum";
 //
 //        String createSpectrumTableSql = "CREATE TABLE IF NOT EXISTS \"" + spectrumTableName.toUpperCase() + "\" (" +
