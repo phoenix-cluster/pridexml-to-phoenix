@@ -5,6 +5,8 @@ package org.ncpsb.phoenixcluster.pridexmltophoenix;
  */
 
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -57,6 +59,8 @@ public class Cli {
                 }
                 File inputFile = new File(inputFileName);
 
+                String fileName = inputFile.getName();
+                String fileNameWithoutSuff = fileName.substring(0,fileName.lastIndexOf("."));
                 DataAccessController controller = new PrideXmlControllerImpl(inputFile);
                 PrideXmlImporter importer = new PrideXmlImporter(controller, inputFile, projectId);
 
@@ -71,7 +75,7 @@ public class Cli {
 //                        System.out.println(outputFile.getAbsolutePath() + "is already there, abort converting");
 //                    }
 //                    else{
-                        importer.persistToCsv(projectId, suffix);
+                        importer.persistToCsv(projectId, fileNameWithoutSuff);
 //                    }
                 }
 //                log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));

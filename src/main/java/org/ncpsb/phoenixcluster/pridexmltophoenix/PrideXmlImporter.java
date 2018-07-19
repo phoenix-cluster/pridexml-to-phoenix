@@ -205,10 +205,10 @@ public class PrideXmlImporter {
     }
 
 
-    public void persistToCsv(String projectId, String suffix_file_name) throws ClassNotFoundException, IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public void persistToCsv(String projectId, String fileName) throws ClassNotFoundException, IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
 
-        File psmFile = new File( suffix_file_name + "_psm.csv");
-        File specFile = new File(suffix_file_name + "_spec.csv");
+        File psmFile = new File( fileName+ "_psm.csv");
+        File specFile = new File(fileName+ "_spec.csv");
 //        String spectrumTableName = "t_spectrum";
 //
 //        String createSpectrumTableSql = "CREATE TABLE IF NOT EXISTS \"" + spectrumTableName.toUpperCase() + "\" (" +
@@ -239,7 +239,7 @@ public class PrideXmlImporter {
         specMappingStrategy.setType(SpectrumRow.class);
         specMappingStrategy.setColumnMapping(SPEC_CSV_HEADER);
 
-        Writer psmWriter = new FileWriter(psmFile, true);// true for append mode
+        Writer psmWriter = new FileWriter(psmFile);// true for append mode
         StatefulBeanToCsv psmBeanToCsv = new StatefulBeanToCsvBuilder(psmWriter)
                 .withMappingStrategy(psmMappingStrategy)
                 .build();
@@ -247,7 +247,7 @@ public class PrideXmlImporter {
         System.out.println(this.psmRows.size() + " psm rows have been imported");
         psmWriter.close();
 
-        Writer specWriter = new FileWriter(specFile, true);// true for append mode
+        Writer specWriter = new FileWriter(specFile);// true for append mode
         StatefulBeanToCsv specBeanToCsv = new StatefulBeanToCsvBuilder(specWriter)
                 .withMappingStrategy(specMappingStrategy)
                 .build();
